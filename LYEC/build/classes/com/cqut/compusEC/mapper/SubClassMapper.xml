@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cqut.compusEC.dao.SubClassDAO">
+	
+	<resultMap type="java.util.HashMap" id="SubClassResult">
+		
+	</resultMap> 
+	
+	<select id="querySubClassByMainId" parameterType="Integer" resultMap="SubClassResult">
+		select * from tb_product_subclass where main_id = #{main_id}
+	</select>
+	
+	<select id="querySubClassNameById" parameterType="Integer" resultMap="SubClassResult">
+		select tb_product_subclass.className from tb_product_subclass where sub_id = #{sub_id}
+	</select>
+	
+</mapper>

@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/*css 初始化 */
+
+/* 主题黄:#ffda44 */
+/* 主题蓝:#4998a1 ---- current */
+
+* {
+    box-sizing: content-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+	margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    font-family: "微软雅黑", helvetica, sans-serif;
+    color: #666;
+    background: #F6F6F6;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+p {
+    display: block;
+}
+
+em, i {
+    font-style: normal;
+}
+
+s, strike, del {
+    text-decoration: line-through;
+}
+
+/* 清除浮动 */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1020px;
+    min-height: 478px;
+    margin: 0 auto;
+}
+
+.w_percent {
+	width: 90%;
+    min-height: 550px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.marginTop-Bottom {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ec-a{
+    display: block;
+    width: 210px;
+    height: 45px;
+    text-indent:-2000em;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+li{
+	display: list-item;
+	text-align: -webkit-match-parent;	
+}
+
+ol, ul{
+	list-style: none;
+}
+
+a:link, a:visited {
+	color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover, a:active{
+    color: #4998a1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+img {
+    border: 0;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/* =========== 公共导航栏 =========== */
+
+/*mask*/
+#mask {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+
+#loginBox {
+	display: none;
+	width: 500px;
+	height: 350px;
+	background-color: #fff;
+	left: 50%;
+	top: 50%;
+	position: fixed;
+	margin:-175px 0 0 -250px ;
+	z-index: 1000;
+	border-radius: 10px;
+}
+
+#loginBox span {
+    position: absolute;
+    top:10px;
+    right:10px;
+    width:20px;
+    height:20px;
+    color: #3399FF;
+    font-size:15px;
+    cursor: pointer;
+}
+
+/* ---- 分割线 ---- */
+.separa {
+    height: 60px;
+    text-align: center;
+}
+
+.separa div, .separa h3 {
+    display: inline-block;
+}
+
+.separa h3 {
+    width: 16%;
+    line-height: 50px;
+    color: #333;
+    font-size: 28px;
+}
+
+.separa div {
+    margin-top:51px;
+    width: 42%;
+    border-top:3px dashed #ccc;
+}
+
+.separa .ftit_inner_left {
+     float: left;
+ }
+
+.separa .ftit_inner_right {
+    float: right;
+}
+
+/*---- footer ----*/
+.footer {
+	width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.footer .copyright {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    width: 600px;
+    height: 100px;
+    line-height:100px;
+    color: #ccc;
+}
