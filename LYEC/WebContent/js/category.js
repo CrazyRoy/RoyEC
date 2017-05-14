@@ -65,7 +65,7 @@ function querySubClassByMainId(mainID) {
     		// 遍历json数组
     		var resultList = json.resultList;
     		for(var i=0; i<resultList.length; i++){
-    			divBoxs.append("<a class='ec_tags_item' target='_self' href='category.jsp?subId=" + resultList[i].sub_id + "'>" + resultList[i].className +"</a>");
+    			divBoxs.append("<a class='ec_tags_item' href='category.jsp?subId=" + resultList[i].sub_id + "'>" + resultList[i].className +"</a>");
     		}
     	},
     	error: function(data){
@@ -89,13 +89,13 @@ function GetProductsByMainId(mainId) {
 			var resultList = json.resultList;
     		for(var i=0; i<resultList.length ;i++){
     			ulBox.append("<li class='product-item'>" + 
-    							"<a class='pro_item_pic' href='productDetail.jsp?product_id=" + resultList[i].product_id + "' target='_blank'>" + 
-    								"<img src='" + resultList[i].imageUrls + "' alt='" + resultList[i].title + "'>" + 
+    							"<a class='pro_item_pic' href='productDetail.jsp?product_id=" + resultList[i].product_id + "'>" + 
+    								"<img src='" + resultList[i].imageUrls + "' alt='" + resultList[i].title + "' target='centerPage'>" + 
     								"</img>" + 
     							"</a>" + 
     							"<div class='pro_item_info'>" + 
     								"<p class='pro_item_desc'>" + 
-    									"<a href='productDetail.jsp?product_id=" + resultList[i].product_id + "' target='self'>" + resultList[i].title + "</a>" + 
+    									"<a href='productDetail.jsp?product_id=" + resultList[i].product_id + "' target='centerPage'>" + resultList[i].title + "</a>" + 
     								"</p>" + 
     								"<p class='pro_item_price'>" + 
     									"<em>¥</em>" + 
@@ -126,13 +126,13 @@ function GetProductsBySubId(subId) {
 			var resultList = json.resultList;
     		for(var i=0; i<resultList.length ;i++){
     			ulBox.append("<li class='product-item'>" + 
-    							"<a class='pro_item_pic' href='productDetail.jsp?product_id=" + resultList[i].product_id + "' target='_blank'>" + 
+    							"<a class='pro_item_pic' href='productDetail.jsp?product_id=" + resultList[i].product_id + "' target='centerPage'>" + 
     								"<img src='" + resultList[i].imageUrls + "' alt='" + resultList[i].title + "'>" + 
     								"</img>" + 
     							"</a>" + 
     							"<div class='pro_item_info'>" + 
     								"<p class='pro_item_desc'>" + 
-    									"<a href='productDetail.jsp?product_id=" + resultList[i].product_id + "' target='self'>" + resultList[i].title + "</a>" + 
+    									"<a href='productDetail.jsp?product_id=" + resultList[i].product_id + "' target='centerPage'>" + resultList[i].title + "</a>" + 
     								"</p>" + 
     								"<p class='pro_item_price'>" + 
     									"<em>¥</em>" + 

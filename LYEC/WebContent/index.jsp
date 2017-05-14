@@ -41,11 +41,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="nav-menu">
 					<ul>
 						<li class="m-home active" name="home.jsp"><a
-							href="javascript:void(0);">首页</a></li>
+							href="home.jsp" target="centerPage">首页</a></li>
 						<li class="m-app" name="category.jsp?subId=1"><a
-							href="category.jsp?subId=1" target="centerpage">手机二手</a></li>
+							href="category.jsp?subId=1" target="centerPage">手机二手</a></li>
 						<li class="m-bicycle" name="category.jsp?subId=2"><a
-							href="javascript:void(0);" target="centerpage">二手自行车</a></li>
+							href="javascript:void(0);" target="centerPage">二手自行车</a></li>
 					</ul>
 				</div>
 				<div class="nav-manage">
@@ -69,8 +69,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	<!-- 首页 -->
 	<div class="contentPage">
-		<iframe id="iframepage" src="home.jsp" onload="IframeLoadEND()"  style="width:100%;" name="centerpage"
-			scrolling="no"  frameborder="0"></iframe>
+		<iframe id="iframepage" src="home.jsp" style="width:100%;" name="centerPage"
+			scrolling="no" frameborder="0"></iframe>
 	</div>
 
 	<!-- 返回顶部 -->
@@ -87,28 +87,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	var  timer1;
 	window.onload = function(){
 		
-		runloopIframe();
+		timer1 = window.setInterval("reinitIframe()", 500); //定时调用开始
 		
 		/*document.getElementById("iframepage").src = "frame.html";*/
 		/*document.getElementById("iframepage").onload = IframeLoadEND;*/
 	};
-	
-	function runloopIframe() {
-		timer1 = window.setInterval("reinitIframe()", 500); //定时调用开始
-	}
 
 	function reinitIframe(){  
 		console.log(1);
 		var iframe = document.getElementById("iframepage");  
 		try{  
-	  	 	 var bHeight = iframe.contentWindow.document.body.scrollHeight;  
-	   		 var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;  
-	   	 	var height = Math.min(bHeight, dHeight);  
+	  	 	var bHeight = iframe.contentWindow.document.body.scrollHeight;  
+	   		var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;  
+	   	 	var height = Math.max(bHeight, dHeight);  
+	   	 	console.log("bHeight==="+bHeight);
+		    console.log("dHeight==="+dHeight);
+		    console.log("height==="+height);
 	    	iframe.height = height;  
 		}catch (ex){}  
 	}  
   
-	//完毕后干掉定时器  
+ 	//完毕后干掉定时器  
+ 	/*
 	function IframeLoadEND(){  
 		console.log(2);
 		var iframe = document.getElementById("iframepage");  
@@ -123,8 +123,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			    iframe.height = height;  
 			}catch (ex){}  
 		    // 停止定时  
-		    window.clearInterval(timer1);  
-		}  
+		    window.clearInterval(timer1);
+		}   */
 </script>
 </html>
 

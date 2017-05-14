@@ -7,8 +7,7 @@ $(document).ready(function(){
 	$('.header .nav .nav-menu li').click(function(){
     	$('.header .nav .nav-menu li').removeClass("active");
     	$(this).addClass("active");
-    	$('#iframepage').attr("src", $(this).attr("name"));
-    	runloopIframe();
+    	/*$('#iframepage').attr("src", $(this).attr("name"));*/
     	/*window.location.href = $(this).attr("name");*/
     });
 });
