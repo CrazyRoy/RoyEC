@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<!-- <li class="m-app" name="category.jsp?subId=1"><a
 							href="category.jsp?subId=1" target="centerPage">手机二手</a></li> -->
 							<li class="m-app" name="category.jsp?subId=1"><a
-							href="test.jsp" target="centerPage">手机二手</a>
+							href="demo.jsp" target="centerPage">手机二手</a>
 						<li class="m-bicycle" name="category.jsp?subId=2"><a
 							href="javascript:void(0);" target="centerPage">二手自行车</a></li>
 					</ul>
