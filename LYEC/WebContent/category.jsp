@@ -67,10 +67,10 @@
 		<p class="copyright">Copyright © 2016-2017 www.cqut.com |
 			计算机科学与工程学院 | 软件工程专业 | 版权所有</p>
 	</div>
-</body>
 	<!-- 链接js文件 -->
 	<script type="text/javascript" src="link/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="link/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/base.js"></script>
 	<script type="text/javascript" src="js/category.js"></script>
+</body>
 </html>

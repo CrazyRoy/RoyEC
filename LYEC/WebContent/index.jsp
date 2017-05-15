@@ -42,8 +42,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<ul>
 						<li class="m-home active" name="home.jsp"><a
 							href="home.jsp" target="centerPage">首页</a></li>
-						<li class="m-app" name="category.jsp?subId=1"><a
-							href="category.jsp?subId=1" target="centerPage">手机二手</a></li>
+						<!-- <li class="m-app" name="category.jsp?subId=1"><a
+							href="category.jsp?subId=1" target="centerPage">手机二手</a></li> -->
+							<li class="m-app" name="category.jsp?subId=1"><a
+							href="test.jsp" target="centerPage">手机二手</a>
 						<li class="m-bicycle" name="category.jsp?subId=2"><a
 							href="javascript:void(0);" target="centerPage">二手自行车</a></li>
 					</ul>
@@ -70,7 +72,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!-- 首页 -->
 	<div class="contentPage">
 		<iframe id="iframepage" src="home.jsp" style="width:100%;" name="centerPage"
-			scrolling="no" frameborder="0"></iframe>
+			scrolling="no" frameborder="0" onload="reinitIframe(this)"></iframe>
 	</div>
 
 	<!-- 返回顶部 -->
@@ -87,17 +89,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	var  timer1;
 	window.onload = function(){
 		
-		timer1 = window.setInterval("reinitIframe()", 500); //定时调用开始
+		//stimer1 = window.setInterval("reinitIframe()", 500); //定时调用开始
 		
 		/*document.getElementById("iframepage").src = "frame.html";*/
 		/*document.getElementById("iframepage").onload = IframeLoadEND;*/
 	};
 
-	function reinitIframe(){  
+	function reinitIframe(thiss){  
 		console.log(1);
 		var iframe = document.getElementById("iframepage");  
 		try{  
-	  	 	var bHeight = iframe.contentWindow.document.body.scrollHeight;  
+	  	 	var bHeight = thiss.contentWindow.document.body.offsetHeight;  
 	   		var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;  
 	   	 	var height = Math.max(bHeight, dHeight);  
 	   	 	console.log("bHeight==="+bHeight);
