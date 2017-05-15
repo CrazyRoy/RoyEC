@@ -231,7 +231,7 @@
 .detail-desc .tabs ul li {
 	float: left;
 	cursor: pointer;
-	display: binline-block;
+	display: inline-block;
 	width: 100px;
 	height: 40px;
 	line-height: 40px;

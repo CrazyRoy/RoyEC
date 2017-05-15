@@ -142,6 +142,7 @@
 			
 			var tabIntro = $('.detail-desc .tabs .intro');
 			var tabMes = $('.detail-desc .tabs .mes');
+			
 			var intro = $('.detail-desc .tabs-content .mode-block.introduce');
 			var mess = $('.detail-desc .tabs-content .mode-block.message');
 			
