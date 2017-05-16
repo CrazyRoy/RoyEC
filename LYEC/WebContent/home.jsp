@@ -20,14 +20,12 @@
 <!-- css外联样式 -->
 <link rel="stylesheet" type="text/css"
 	href="link/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/basic.css" />
 <link rel="stylesheet" type="text/css" href="css/home.css" />
 <title>CompusEC</title>
 </head>
 <body>
 
-	<!--中间内容-->
-	<div class="page">
 		<!--内容居中-->
 		<div class="w content indexContent">
 			<!--分类+轮播+发布-->
@@ -308,7 +306,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	
 	<!--底部 footer-->
 	<div class="footer clearfix">
@@ -319,6 +316,6 @@
 <!-- 链接js文件 -->
 <script type="text/javascript" src="link/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="link/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/basic.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
 </html>
