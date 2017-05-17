@@ -66,10 +66,19 @@ s, strike, del {
     margin: 0 auto;
 }
 
+.alignCenter {
+	width: 1020px;
+	margin: 0 auto;
+}
+
 .w_percent {
 	width: 90%;
     min-height: 550px;
     margin: 0 auto;
+}
+
+.block-model {
+	display: inline-block;
 }
 
 .fl {

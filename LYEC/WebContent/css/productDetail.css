@@ -1,6 +1,6 @@
 
 .detailContent {
-	padding: 10px 0;
+	padding: 30px 0;
 }
 
 .detail-head {
@@ -16,22 +16,22 @@
 .owner-info {
 	margin-left: 80px;
 	width: 240px;
-	height: 50px;
+	height: 60px;
 	float: left;
 }
 
 .owner-info img {
 	vertical-align: middle;
-	border-radius: 20px;
-	width: 40px;
-	height: 40px;
+	border-radius: 23px;
+	width: 46px;
+	height: 46px;
 }
 
 .owner-info .user_name {
 	display: inline-block;
-	height: 50px;
+	height: 60px;
 	margin-left: 20px;
-	line-height: 50px;
+	line-height: 60px;
 	font-size: 17px;
 	color: #000;
 }
@@ -45,7 +45,7 @@
 .viewCount-time div {
 	float: left;
 	width: 148px;
-	height: 50px;
+	height: 60px;
 	border-left: 1px solid #ccc;
 	text-align: center;
 }
@@ -53,8 +53,8 @@
 .viewCount-time div span {
 	display: inline-block;
 	width: 100%;
-	height: 25px;
-	line-height: 25px;
+	height: 30px;
+	line-height: 30px;
 	font-size: 13px;
 	color: #ccc;
 }
@@ -102,11 +102,16 @@
 	display: inline-block;
 	float: left;
 	margin: 8px 0;
-	margin-left: 10px;
+	margin-left: 12px;
 	width: 85px;
 	height: 85px;
-	border: 1px dashed #000000;
 }
+
+.detail-center .show-images .totalImgs .image-list .des-img img {
+	width: 85px;
+	height: 85px;
+}
+
 
 .base-info {
 	width: 360px;
@@ -220,7 +225,7 @@
 }
 
 .detail-desc .tabs {
-	height: 40px;
+	height: 50px;
 	border-bottom: 4px solid #ffcc00;
 }
 
@@ -232,13 +237,14 @@
 	float: left;
 	cursor: pointer;
 	display: inline-block;
-	width: 100px;
-	height: 40px;
-	line-height: 40px;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
 	color: #000;
-	font-size: 16px;
+	font-size: 18px;
 	text-align: center;
 	font-weight: 700;
+	background-color: #fff;
 	border-top: 1px solid #CCC;
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
@@ -253,28 +259,196 @@
 .detail-desc .tabs-content {
 	background-color: #fff;
 	border: 1px solid #ccc;
+	margin-top: 10px;
 }
 
 .detail-desc .tabs-content .mode-block {
 	position: relative;
+	background-color: #F6F6F6;
+	display: none;
 }
 
-.detail-desc .tabs-content .introduce {
-	height: 250px;
-	display: none;
-	/*background-color: #1B6D85;*/
+.detail-desc .tabs-content .introduce p{
+	font-size: 17px;
+	line-height: 25px;
+	padding: 20px;
+	background-color: #fff;
 }
 
-.detail-desc .tabs-content .message {
-	height: 400px;
-	display: none;
-	/*background-color: #28A4C9;*/
-}
 
 .detail-desc .tabs-content .mode-block.active {
 	z-index: 23;
 	display: block;
 }
 
+/*评论*/
+.detail-desc .tabs-content .message .cl {
+	margin-top: 10px;
+	padding: 8px;
+	background-color: #fff;
+}
+
+.detail-desc .tabs-content .message .cl .cl-headlogo {
+	width: 5%;
+	float: left;
+}
+
+.detail-desc .tabs-content .message .cl .cl-headlogo img {
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+
+.detail-desc .tabs-content .message .cl .cl-comment {
+	float: right;
+	width: 95%;
+}
+
+.detail-desc .tabs-content .message .cl .cl-header {
+	font-weight: 700;
+	padding: 5px 5px 5px 15px;
+	/*background: #f8f8f8;*/
+	/*border-bottom: 1px dashed #46b675;*/
+}
+
+.detail-desc .tabs-content .message .cl .cl-header .comment-time {
+	float: right;
+}
+
+.detail-desc .tabs-content .message .cl .cl-content {
+	left: 0px;
+	margin: 0px;
+	padding: 10px;
+	padding: 5px 5px 5px 15px;
+}
+
+.detail-desc .tabs-content .message .cl .cl-foot {
+	float: right;
+	padding: 5px 5px 0px 10px;
+}
+
+.detail-desc .tabs-content .message .cl .cl-foot .like {
+	cursor: pointer;
+}
+
+.detail-desc .tabs-content .message .cl .cl-foot .like i {
+	display: inline-block;
+	width: 12px;
+	height: 14px;
+	vertical-align: text-top;
+	margin-right: 5px;
+	background:
+		url(http://static.hdslb.com/phoenix/dist/images/icons-comment.png)
+		no-repeat;
+	background-position: -154px -25px;
+}
+
+.detail-desc .tabs-content .message .cl .cl-foot .like.liked i {
+	background-position: -154px -89px;
+}
 
 
+.detail-desc .tabs-content .message ul li img {
+	width: 750px;
+}
+
+
+.detail-desc .tabs-content .message .shop-image {
+	margin: 0px;
+	padding-top: 10px;
+}
+
+.detail-desc .tabs-content .message .navbar li {
+	margin-top: 30px;
+}
+
+.detail-desc .tabs-content .message .comment {
+	width: 900px;
+	margin: 15px auto;
+}
+
+.detail-desc .tabs-content .message .comment .button {
+	float: right;
+	display: block;
+	width: 92px;
+	height: 36px;
+	background-color: #40bb8c;
+	text-align: center;
+	line-height: 36px;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-top: 29px;
+	border: 0px;
+}
+
+.detail-desc .tabs-content .message .comment-area {
+	width: 844px;
+	height: 80px;
+	font-size: 16px;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f4f5f7;
+	border: 1px solid #e5e9ef;
+	overflow: auto;
+	border-radius: 4px;
+	color: #555;
+	width: 100% !important;
+	outline: none;
+	resize: none;
+	transition: 0s;
+	padding: 5px 10px;
+	line-height: normal;
+}
+
+textarea:focus {
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.detail-desc .tabs-content .message .comment-area button {
+	
+}
+
+/*分页样式开始*/
+.pagination {
+	float: right;
+	padding-left: 0;
+	margin: 20px 0;
+	border-radius: 4px;
+}
+
+li.totalPage {
+	float: left;
+	overflow: auto;
+	border: 0px;
+}
+
+li.totalPage>span {
+	border: 0px solid white;
+	color: #337ab7;
+	background: white;
+	position: relative;
+	line-height: 1.42857143;
+	text-decoration: none;
+}
+
+li.totalPage>span:hover {
+	color: #337ab7;
+	background-color: white;
+}
+
+li.jumpPage>span {
+	margin: 0px 6px;
+}
+
+li.jumpPage>input[type=text] {
+	width: 30px;
+	height: 34px;
+	float: left;
+	outline: none;
+	margin-right: 6px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+}
