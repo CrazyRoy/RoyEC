@@ -7,10 +7,11 @@
   ****
   
    > 登录 
+   
   <img src="https://github.com/CrazyRoy/RoyEC/blob/master/imgs/login.png" width="600" height="320" alt="图片2-1" />
   
    > 收藏
-   
+
   <img src="https://github.com/CrazyRoy/RoyEC/blob/master/imgs/mark.png" width="600" height="320" alt="图片3-1" />
   ****
   
@@ -20,11 +21,12 @@
   ****
    > 评论
    
-  <img src="https://github.com/CrazyRoy/RoyEC/blob/master/imgs/comment.png" width="600" height="320" alt="图片5-1" />
+  <img src="https://github.com/CrazyRoy/RoyEC/blob/master/imgs/comments.png" width="600" height="320" alt="图片5-1" />
   ****
    > 发布
    
   <img src="https://github.com/CrazyRoy/RoyEC/blob/master/imgs/publish.png" width="600" height="320" alt="图片6-1" />
+  ****
   
   > 添加收货地址
    
