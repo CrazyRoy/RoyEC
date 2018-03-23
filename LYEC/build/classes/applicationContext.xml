@@ -16,7 +16,7 @@
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd ">
 
 	<!-- 自动扫描 -->
-	<context:component-scan base-package="com.cqut.compusEC.service"/>
+	<context:component-scan base-package="com.cqut.compusEC"/>
 	
 	<!-- 加载定时任务 -->
 	<task:annotation-driven/>
@@ -25,7 +25,7 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://localhost:3306/compusEC_db?useUnicode=true&amp;characterEncoding=UTF-8"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/compus?useUnicode=true&amp;characterEncoding=UTF-8"/>
 		<property name="username" value="root"/>
 		<property name="password" value="554554"/>
 	</bean>
@@ -36,7 +36,7 @@
 		<!-- 自动扫描Mapper.xml文件 -->
 		<property name="mapperLocations" value="classpath:com/cqut/compusEC/mapper/*.xml"></property>
 		<!-- mybatis配置文件 -->
-		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+		<!-- <property name="configLocation" value="classpath:mybatis-config.xml"></property> -->
 	</bean>
 	
 	<!-- DAO接口所在包名，Spring会自动查找其下的类 -->
@@ -56,10 +56,15 @@
        <!--  定义事务传播属性   -->
         <tx:attributes>
             <tx:method name="insert*" propagation="REQUIRED" />  
+            <tx:method name="add*" propagation="REQUIRED" />  
             <tx:method name="update*" propagation="REQUIRED" />  
+            <tx:method name="edit*" propagation="REQUIRED" />  
             <tx:method name="save*" propagation="REQUIRED" />  
-            <tx:method name="delete*" propagation="REQUIRED" />      
+            <tx:method name="delete*" propagation="REQUIRED" />
+            <tx:method name="del*" propagation="REQUIRED" />
+            <tx:method name="*Do" propagation="REQUIRED" />      
             <tx:method name="find*" propagation="REQUIRED" read-only="true" />  
+            <tx:method name="get*" propagation="REQUIRED" read-only="true" />  
             <tx:method name="*" propagation="REQUIRED" read-only="true" />  
         </tx:attributes>
     </tx:advice>
@@ -70,5 +75,4 @@
             expression="execution(* com.cqut.compusEC.service.*.*(..))" />
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation" />  
     </aop:config>
-    
 </beans>
