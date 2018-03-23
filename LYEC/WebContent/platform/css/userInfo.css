@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+
+.person-content {
+	margin-top: 15px;
+	padding: 20px;
+	padding-top: 10px;
+	min-height: 335px;
+	background-color: #fff;
+}
+
+.person-content .model {
+	width: 480px;
+}
+
+.person-content .info {
+	margin: 10px;
+}
+
+.person-content .leftDiv {
+	float: left;
+}
+
+.person-content .leftDiv .imgDiv {
+	width: 120px;
+	margin-left: 170px;
+	margin-bottom: 30px;
+	margin-top: 10px
+}
+
+.person-content .leftDiv .imgDiv .headImg {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin: 10px;
+}
+
+.person-content .leftDiv .imgDiv .change-imgBtn {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #009688;
+	color:#fff;
+}
+
+.person-content .rightDiv {
+	float: right;
+	margin-top: -10px;
+}
+
+.person-content .row {
+	margin-top: 25px;
+}
+
+.person-content .row>div {
+	display: inline-block;
+	height: 45px;
+	margin: 0 10px;
+}
+
+.person-content .row label {
+	width: 70px;
+	max-width: 70px;
+	height: 44px;
+	line-height: 44px;
+	margin-left: 30px;
+	font-size: 14px;
+	text-align: center;
+	color: #009688;
+	background-color: #e6e6e6;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.person-content .row input[type=text], .person-content .row .schoolSelect {
+	display: inline-block;
+	margin-left: -4px;
+	margin-top: -5px;
+	height: 42px;
+	width: 300px;
+	line-height: 42px;
+	border-top: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+	border-right: 1px solid #C0C0C0;;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+.person-content .row .schoolSelect option {
+	padding: 10px;
+	margin: 10px;
+}
+
+.person-content .row input.selectBtn {
+	margin-left: 15px;
+	margin-top: -6px;
+	width: 30px;
+	height: 20px;
+	font-size: 16px;
+}
+
+.person-content .row>div.actions {
+	float: right;
+	margin-top: 30px;
+	margin-right: 70px;
+	margin-bottom: 30px;
+}
+
+.person-content button {
+	float: right;
+	width: 80px;
+	height: 30px;
+	margin: 10px;
+	background-color: #009688;
+	color:#fff;
+}

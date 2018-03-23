@@ -1,0 +1,62 @@
+\.table_disdan{
+	width:100%;
+	margin:10px 0;
+	border-collapse:collapse;
+	border-spacing:0;
+	font-size: 12px;
+}
+
+.table_disdan td{
+	padding:5px;
+}
+
+.table_disdan td.label{
+	width:100px;
+	text-align:right;
+}
+
+.red{
+	margin-left:5px;
+	color:red;
+}
+
+.input_text {
+	width: 169px;
+}
+
+.table_disdan textarea{
+    margin-top:5px;
+    width: 150px;
+    height: 70px;
+}
+
+.width300{width:300px;}
+.width350{width:350px;}
+.width400{width:400px;}
+.width450{width:450px;}
+.width500{width:500px;}
+.width550{width:550px;}
+.width600{width:600px;}
+.width650{width:650px;}
+.width700{width:700px;}
+.width750{width:750px;}
+.width800{width:800px;}
+.width850{width:850px;}
+.width900{width:900px;}
+.width950{width:950px;}
+.width1000{width:1000px;}
+
+.loading {
+ width:64px;
+ height:64px;
+ position:absolute;
+ top:200px;
+ left:400px; 
+ z-index:10000; 
+ background-color:#F7F9FC;
+ line-height:25px;
+ vertical-align:middle;
+ font-size:11pt;
+ opacity: 0.8;
+ display:none;
+}

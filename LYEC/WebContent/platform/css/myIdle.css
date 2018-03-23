@@ -1,0 +1,150 @@
+@charset "UTF-8";
+		
+.order-list-title .titles {
+	/* background-color: #ccc; */
+	background-image: linear-gradient(to bottom,#CCC,#FFF);
+	height: 20px;
+	padding: 20px;
+	margin-bottom: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.order-list-title>div>span {
+	display: inline-block;
+ 	height: 20px;
+ 	line-height: 20px;
+ 	color: #000;
+ 	margin-right: 20px;
+	float: left;
+ 	text-align: center;
+ 	font-size: 15px;
+ 	font-weight: 600;
+ }
+ 
+ .order-list-title .title_img {
+ 	width: 150px;
+ }
+ 
+ .order-list-title .title_des {
+ 	width: 300px;
+ }
+
+.order-list-title .title_price {
+	width: 200px;
+}			
+
+.order-list-title .title_condition {
+	width: 130px;
+}
+
+.order-list-title .title_actions {
+	width: 60px;
+	margin-left: 10px;
+}
+
+.order-list {
+	margin: 0px;
+	min-height: 385px;
+}
+
+.order-list .item {
+	padding: 20px;
+	margin-bottom: 5px;
+	background: #fff;
+	position: relative;
+}
+
+.order-list .item .item-pic {
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+}
+
+.product_pic {
+	width: 150px;
+	height: 150px;
+	border-radius: 3px;
+}
+
+.item>div {
+	height: 150px;
+	margin-right: 20px;
+	float: left;
+}
+
+.item .title {
+	width: 300px;
+	cursor: pointer;
+}
+
+.item .product_title {
+	line-height: 30px;
+	height: 150px;
+	padding: 20px;
+	font-size: 15px;
+}
+
+.item .prices {
+	width: 200px;
+	border-left: 1px dashed #ccc;
+}
+
+.item .prices span {
+	width: 100%;
+	text-align: center;
+	display: block;
+	height: 50px;
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+.item .condition {
+	width: 130px;
+	border-left: 1px dashed #ccc;
+}
+
+.item .condition .product_condition {
+	display: block;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.item .actions {
+	width: 60px;
+}
+
+.item .actions button {
+	width: 60px;
+	margin-bottom: 25px;
+}
+
+.item .actions button.actionButton {
+	background-color: #fff;
+	border: 1px solid #009688;
+	color: #009688;
+}
+
+
+.page-div {
+	margin: 10px;
+	margin-right: 0;
+}
+
+.page-div .pagination {
+	float: right;
+}
+
+.page-div .pagination li a {
+/*	height: 30px;*/
+}
+
+.InvalidImg {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 60px;
+	right: 260px;
+}

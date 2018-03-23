@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+.orderContent {
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 24px;
+}
+
+.orderContent .address-content {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px;
+	border-bottom: 1px solid #009688;
+}
+
+.titleLabel {
+	color: #009688;
+	font-size: 17px;
+	font-weight: bold;
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+.orderContent .address-content .address-info {
+	padding: 8px;
+	margin-left: 40px;
+	font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	padding-bottom: 0;
+}
+
+.orderContent .goods-content {
+	padding: 15px;
+	padding-bottom: 0;
+	border-bottom: 1px solid #009688;
+}
+
+.orderContent .goods-content .info-footer {
+	margin-top: 50px;
+	padding: 10px;
+	width: 98%;
+}
+
+.orderContent .goods-content .info-footer p {
+	height: 35px;
+	line-height: 35px;
+	text-align: right;
+	font-size: 15px;
+}
+
+.orderContent .goods-content .info-footer .order-price {
+	font-size: 17px;
+}
+
+.titleMark {
+	color: #009688;
+}
+
+.orderContent .order-footer {
+	padding: 10px;
+}
+
+/* 商品信息  */
+
+.order-list {
+	margin: 10px 0;
+}
+
+.order-list .item {
+	padding: 20px;
+	margin-bottom: 5px;
+	background: #fff;
+	position: relative;
+}
+
+.order-list .item .item-pic {
+	width: 150px;
+	height: 150px;
+}
+
+.product_pic {
+	width: 150px;
+	height: 150px;
+	border-radius: 3px;
+}
+
+.item>div {
+	float: left;
+}
+
+.item .title {
+	width: 300px;
+}
+
+.item .product_title {
+	line-height: 30px;
+	height: 150px;
+	padding: 20px;
+	font-size: 15px;
+}
+
+.item .prices {
+	width: 165px;
+	border-left: 1px dashed #009688;
+}
+
+.item .prices>span {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	height: 150px;
+	line-height: 150px;
+	font-size: 15px;
+}
+
+.item .prices .orginal_price {
+	text-decoration:line-through;
+}
+
+.item .condition {
+	width: 165px;
+	border-left: 1px dashed #009688;
+}
+
+.item .condition .product_condition {
+	display: block;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.item .actions {
+	width: 60px;
+}
+
+.item .actions button {
+	width: 60px;
+	margin-bottom: 25px;
+}
+
+.order-footer .next-step {
+	margin: 15px 0;
+	margin-right: 10px;
+	background-color: #009688;
+	color:#fff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+

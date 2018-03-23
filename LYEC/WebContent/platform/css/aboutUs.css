@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+.alignCenter .aboutusContent {
+	background-color: #fff;
+	border: 3px dashed #009688;
+	margin-bottom: 50px;
+}
+
+.aboutusContent .about-head {
+	padding: 30px
+}
+
+.aboutusContent .about-head .head-logo {
+	float: left;
+	display: inline-block;
+	width: 22%;
+	height: 200px;
+}
+
+.aboutusContent .about-head .head-title {
+	float: right;
+	width: 73%;
+	height: 200px;
+}
+
+.aboutusContent .about-head .head-title span {
+	display: block;
+}
+
+.aboutusContent .detail-des span {
+	display: block;
+}
+
+.aboutusContent .about-head .head-title .aboutusText1 {
+	color: #009688;
+	font-size: 38px;
+	font-weight: Bold;
+	height: 50px;
+	line-height: 100px;
+	margin-left: 63px;
+}
+
+.aboutusContent .about-head .head-title .aboutusText2 {
+	color: #000;
+	font-size: 40px;
+	font-weight: Bold;
+	margin-top: 40px;
+	line-height: 100px;
+	margin-top: 40px;
+}
+
+.aboutusContent .about-head .head-logo .aboutusImg {
+	width: 150px;
+	height: 150px;
+	margin-top: 20px;
+	margin-left: 70px;
+	background: url(../img/login/logo.png) no-repeat;
+	background-size: 180px 180px;
+}
+
+.aboutusContent .detail-head {
+	height: 300px;
+	border: 1px solid #009688;
+}
+
+.aboutusContent .detail-des {
+	border-top: 1px solid #009688;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.aboutusContent .detail-des .aboutus-detailText {
+	color: grey;
+	font-size: 15px;
+	margin: 4px 30px;
+	line-height: 32px;
+	padding: 10px;
+}
+
+.aboutusContent .about-bottom {
+	border-top: 1px solid #009688;
+}
+
+.aboutusContent .about-bottom .bottom-call {
+	margin: 30px 30px;
+	height: 25px;
+	background: url(../img/login/call.png) no-repeat;
+	background-size: 22px 22px;
+}
+
+.aboutusContent .about-bottom .bottom-call .call-text {
+	color: #009688;
+	font-size: 19px;
+	font-weight: Bold;
+	margin: 30px 30px;
+	line-height: 25px;
+}
+
+.aboutusContent .about-bottom .call-des span {
+	display: block;
+}
+
+.aboutusContent .about-bottom .call-des {
+	padding-bottom: 20px;
+}
+
+.aboutusContent .about-bottom .call-des .call-text {
+	color: grey;
+	font-size: 15px;
+	margin: 2px 130px;
+	line-height: 10px;
+	padding: 10px;
+}

@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color: #F6F6F6;
+} 
+.goodsInfo {
+	width: 600px;
+	margin: 20px auto;
+	margin-top: 40px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.goodsInfo h2 {
+	text-align: center;
+	color: #009688;
+	font-weight: Bold;
+}
+
+.goodsInfo .row {
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.goodsInfo .row .input-group {
+	width: 100%;
+}
+
+.goodsInfo .row .input-group .input-group-addon{
+	background-color: #009688;
+	color: #fff;
+}
+
+.goodsInfo .row .input-group input {
+	height: 50px;
+}
+
+.goodsInfo .row label {
+	height: 30px;
+	font-size: 16px;
+	color:#009688;
+}
+
+.goodsInfo .row .input-group span {
+	font-size: 15px;
+	width: 60px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.goodsInfo .row .small-input {
+	margin: 0;
+	padding: 0;
+	padding-right: 20px;
+	
+}
+
+.goodsInfo .row .small-input.last {
+	margin: 0;
+	padding: 0;
+}
+
+#input-goodsInfo-desc {
+	/*height: 100px;*/
+}
+
+.goodsInfo .row select, .goodsInfo .row select option {
+	height: 50px;
+}
+
+.goodsInfo .row .image-label {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+}
+
+.goodsInfo .row .btn-upload {
+	float: left;
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/login/addImg.png);
+	background-position: center center;
+	background-size: 60px 60px;
+}
+
+.postBtn {
+	width: 100%;
+	height: 50px;
+	background-color: #009688;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 18px;
+	margin-bottom: 20px;
+}

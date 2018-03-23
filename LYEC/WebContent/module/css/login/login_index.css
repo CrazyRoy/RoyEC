@@ -1,0 +1,99 @@
+html, body {height: 100%;margin: 0;overflow: hidden;}	/*overflow: hidden;兼容IE7滚动条*/
+html #container {
+	height : 100%;
+	width : 100%;
+	padding : 0px;	
+	
+	min-height: 600px;
+	min-width: 850px;
+}
+
+#content {
+	height: 100%;
+	height: 100%;
+	
+	position: relative;
+	
+	overflow:hidden; zoom:1;/*消除margin合并*/
+}
+
+#content #backgroundImg {
+	width: 100%;
+	height : 100%;
+	position: absolute;
+	z-index:-2;
+}
+
+#formContent {
+	width: 63%;
+	height: 55%;
+	margin:0 auto;
+	
+	background:white;
+	position: relative;
+	top: 20%;
+}
+
+#content #permitLeft {
+	height: 55%;
+	width: 35%;
+	float: left;
+	
+	position: relative;
+	top: 20%;
+	left: 7%;
+}
+
+#content #permitLine {
+	width: 1px;
+	height: 100%;
+	float: left;
+	
+	position: relative;
+	left: 15%;
+}
+
+#content #fm {
+	width: 35%;
+	height: 68%;
+	float: right;
+	
+	position: relative;
+	top: 14%;
+	right: 7%;
+}
+
+#fm #logo {
+	width: 100%;
+	height: 11%;
+}
+
+#logo #leaf {
+	width: 11%;
+	height: 90%;
+	float: left;
+	
+	margin-top: 1%;
+}
+
+#logo #font {
+	width: 85%;
+	height: 100%;
+	float: right;
+}
+
+#fm #login {
+	width: 100%;
+	height: 50%;
+	
+	margin-top: 10%;
+}
+
+#login #PASSWORD {
+	margin-top: 10%;
+}
+
+#fm #button {
+	width: 100%;
+	height: 20%;
+}
